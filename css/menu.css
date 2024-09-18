@@ -1,0 +1,240 @@
+header{
+    position: fixed;
+    left: 0;
+    background-color: var(--cor3);
+    width: 90%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    z-index: 2;
+    box-shadow: 1px 10px 50px #0000004b;
+}
+
+#menu-bar{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#input-menu{
+    display: none;
+}
+
+#label-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-weight: lighter;  
+}
+
+
+
+#label-menu span{
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 0 5px 0;
+}
+
+#label-menu img{
+    width: 20px;
+}
+
+#menu{
+    display: flex;
+    background-color: #000000b9;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 90vh;
+    top: 0;
+    left: -100%;
+    transition: .5s;
+    font-family: 'Taviraj', serif;
+    box-shadow: 1px 1px 10000px #000;
+    z-index: 2;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#menu div{
+    height: 100%;
+}
+
+#close-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: newamsterdam;
+}
+
+#close-menu span{
+    width: 100%;
+    height: 50px;
+    background-color: var(--cor3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18pt;
+}
+
+#close-menu p{
+    display: flex;
+    background-color: var(--cor3);
+    color: #000;
+    cursor: pointer;
+    font-size: 15pt;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#close-menu p:hover{
+    background-color: red;
+    color: #fff;
+}
+
+#menu a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor3);
+    padding: 12px 10px;
+    font-size: 20pt;
+    font-family: newamsterdam;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    
+}
+
+#menu a:hover{
+    background-color: var(--cor3);
+    color: var(--cor1);
+    text-shadow: none;
+}
+
+
+
+a#link-wp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor3);
+    color: #000;
+    font-family: newamsterdam;
+    text-shadow: none;
+}
+
+a#link-wp:hover{
+    background-color: rgb(192, 115, 0);
+    color: #000;
+
+}
+
+#link-wp img{
+    width: 20px;
+}
+
+
+#input-menu:checked ~ #menu{
+    left: 0;
+}
+
+#input-close-menu{
+    display: none;
+}
+
+
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: newamsterdam;
+    font-size: 20pt;
+    text-decoration: none;
+    font-weight:bold;
+    color: #000;
+    gap: 5px;
+    font-weight: lighter;
+}
+
+#logo:hover{
+    color: #000;
+    text-shadow: 2px 2px 2px #0000005e;
+}
+
+#instagram img{
+    width: 20px;
+    filter: drop-shadow(1px 1px 5px #0000004f);
+}
+
+
+
+
+
+@media (min-width: 769px) {
+
+    header{
+        height: auto;
+    }
+    #label-menu{
+        display: none;
+    }
+    
+    #menu{
+        display: flex;
+        background-color: #ffffff00;
+        backdrop-filter: blur(0);
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+        height: auto;
+        top: 0;
+        left: 0;
+        transition: 0s;
+        font-family: 'Taviraj', serif;
+        box-shadow: 0 0 0 #000;
+        font-weight: bold;
+        letter-spacing: 1px;
+        gap: 0;
+    }
+
+    #close-menu{
+        display: none;
+    }
+
+    #menu div{
+        display: flex;
+        gap: 0;
+    }
+
+    #menu a{
+        font-size: 18pt;
+        font-weight: 100;
+        margin: 0;
+        padding: 10px;
+        color: #000;
+        text-shadow: none;
+    }
+
+    #menu a:hover{
+        background-color: #fff;
+    }
+
+    #link-wp img{
+        display: none;
+    }
+}

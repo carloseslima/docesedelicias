@@ -1,0 +1,90 @@
+/* ESTILOS DO RODAPÉ ==================*/
+
+footer{
+    background-color: var(--cor1);
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    color: #fff;
+    border-top: 10px solid var(--cor3);
+    font-family: 'Taviraj', serif;
+    font-family: newamsterdam;
+}
+
+footer img{
+    width: 80px;
+    border-radius: 5px;
+    padding: 10px;
+    filter: grayscale(100%);
+    filter: brightness(100);
+    
+}
+
+footer h2{
+    font-size: 18pt;
+    margin: 20px 0 0 0;
+    padding: 0;
+    color: var(--cor3);
+    text-align: center;
+}
+
+footer p{
+    font-size: 15pt;
+    
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+footer span{
+    background-color: var(--cor3);
+    color: var(--cor1);
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+footer p a:hover{
+    color: var(--cor2);
+}
+
+#whatsapp img{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    width: 50px;
+    filter: drop-shadow(1px 1px 5px #0000004f);
+    opacity: .7;
+    animation: whatsapp 1s infinite;
+}
+
+#whatsapp img:hover{
+    opacity: 1;
+}
+
+@keyframes whatsapp {
+    0% {transform: translateX(0deg);}
+    50% {transform: translateX(10px);}
+    100% {transform: translateX(0deg);}
+}
+
+/* ======= ADS ==============================*/
+.ad1{
+    width: 100%;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    background-color: rgb(255, 201, 139);
+}
+
+#desenvolvedor{
+    margin: 10px 0 0 0;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    padding: 20px 0;
+    font-size: 12pt;
+}
